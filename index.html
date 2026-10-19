@@ -20,7 +20,7 @@
 
         <!-- p: define un párrafo de texto para organizar y estructurar el contenido en bloques -->
         <p>
-            <!-- label: representa una etiqueta o texto explicativo para un elemento del formulario -->
+            <!-- label: represents una etiqueta o texto explicativo para un elemento del formulario -->
             <!-- for: vincula la etiqueta con el id del input que está controlando -->
             <label for="nombre">Nombre:</label>
             <!-- input: crea un campo interactivo para que el usuario introduzca datos -->
@@ -66,6 +66,36 @@
             <label for="telefono">Teléfono:</label>
             <!-- tel: campo de texto optimizado para introducir números de teléfono -->
             <input type="tel" id="telefono" name="telefono">
+        </p>
+
+        <p>
+            <!-- select: crea una lista desplegable de opciones seleccionables -->
+            <!-- size: define el número de filas que se muestran visibles de manera simultánea -->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" size="1">
+                <!-- option: define una opción individual dentro de una lista desplegable -->
+                <!-- value: define el valor de datos que se enviará al servidor al procesar el formulario -->
+                <!-- selected: hace que esta opción aparezca seleccionada por defecto al cargar -->
+                <option value="es" selected>España</option>
+                <option value="mx">México</option>
+            </select>
+        </p>
+
+        <p>
+            <span>Género:</span>
+            <!-- radio: botón de opción donde solo se puede elegir uno de un grupo con el mismo name -->
+            <!-- checked: marca un radio o checkbox como seleccionado por defecto de forma predeterminada -->
+            <input type="radio" id="genero_m" name="genero" value="masculino" checked>
+            <label for="genero_m">Masculino</label>
+            <input type="radio" id="genero_f" name="genero" value="femenino">
+            <label for="genero_f">Femenino</label>
+        </p>
+
+        <p>
+            <span>Intereses:</span>
+            <!-- checkbox: casilla de verificación que permite selecciones múltiples o independientes -->
+            <input type="checkbox" id="int_web" name="intereses" value="web">
+            <label for="int_web">Desarrollo Web</label>
         </p>
 
     </form>
