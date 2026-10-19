@@ -20,7 +20,7 @@
 
         <!-- p: define un párrafo de texto para organizar y estructurar el contenido en bloques -->
         <p>
-            <!-- label: represents una etiqueta o texto explicativo para un elemento del formulario -->
+            <!-- label: representa una etiqueta o texto explicativo para un elemento del formulario -->
             <!-- for: vincula la etiqueta con el id del input que está controlando -->
             <label for="nombre">Nombre:</label>
             <!-- input: crea un campo interactivo para que el usuario introduzca datos -->
@@ -96,6 +96,51 @@
             <!-- checkbox: casilla de verificación que permite selecciones múltiples o independientes -->
             <input type="checkbox" id="int_web" name="intereses" value="web">
             <label for="int_web">Desarrollo Web</label>
+        </p>
+
+        <p>
+            <label for="edad">Edad:</label>
+            <!-- number: campo numérico que restringe la entrada de datos a solo números -->
+            <!-- min: define el valor mínimo numérico o de fecha permitido en el control -->
+            <!-- max: define el valor máximo numérico o de fecha permitido en el control -->
+            <!-- step: especifica los saltos o incrementos de los valores en campos numéricos o de fecha -->
+            <input type="number" id="edad" name="edad" min="18" max="99" step="1">
+        </p>
+
+        <p>
+            <label for="volumen">Volumen:</label>
+            <!-- range: control deslizante para seleccionar un valor numérico aproximado de un rango -->
+            <input type="range" id="volumen" name="volumen" min="0" max="100">
+        </p>
+
+        <p>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <!-- date: selector de fecha completa que incluye año, mes y día de forma visual -->
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        </p>
+
+        <p>
+            <label for="reunion">Cita:</label>
+            <!-- datetime-local: selector de fecha y hora local juntas sin especificar zona horaria -->
+            <input type="datetime-local" id="reunion" name="reunion">
+        </p>
+
+        <p>
+            <label for="mes_vacaciones">Mes de vacaciones:</label>
+            <!-- month: selector para escoger de forma específica un mes y un año concretos -->
+            <input type="month" id="mes_vacaciones" name="mes_vacaciones">
+        </p>
+
+        <p>
+            <label for="semana_reserva">Semana de Reserva:</label>
+            <!-- week: selector para elegir una semana y un año específicos del calendario -->
+            <input type="week" id="semana_reserva" name="semana_reserva">
+        </p>
+
+        <p>
+            <label for="hora_evento">Hora del Evento:</label>
+            <!-- time: selector para introducir una hora específica compuesta por horas y minutos -->
+            <input type="time" id="hora_evento" name="hora_evento">
         </p>
 
     </form>
