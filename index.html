@@ -143,6 +143,33 @@
             <input type="time" id="hora_evento" name="hora_evento">
         </p>
 
+        <p>
+            <label for="archivo">Subir currículum:</label>
+            <!-- file: botón que permite al usuario examinar y subir archivos desde su equipo local -->
+            <!-- accept: especifica los tipos de archivos admitidos mediante extensiones o tipos MIME -->
+            <input type="file" id="archivo" name="archivo" accept=".pdf">
+        </p>
+
+        <p>
+            <label for="color_favorito">Color corporativo:</label>
+            <!-- color: selector visual para elegir un color en formato hexadecimal (#RRGGBB) -->
+            <input type="color" id="color_favorito" name="color_favorito">
+        </p>
+
+        <p>
+            <label for="comentarios">Comentarios:</label>
+            <!-- textarea: crea un control de texto multilínea para escribir bloques largos de texto -->
+            <!-- rows: especifica el número de líneas o filas de texto visibles en el área -->
+            <!-- cols: especifica el ancho visible del área en cantidad de caracteres promedio -->
+            <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea>
+        </p>
+
+        <p>
+            <!-- hidden: campo invisible para el usuario que envía datos técnicos o de sesión al servidor -->
+            <!-- value: define el valor de datos por defecto asignado internamente al control -->
+            <input type="hidden" id="token" name="token" value="secret123">
+        </p>
+
     </form>
 
 </body>
