@@ -18,6 +18,37 @@
     <!-- novalidate: indica que el formulario no debe validarse al enviarse -->
     <form action="#" method="post" autocomplete="on" novalidate>
 
+        <!-- p: define un párrafo de texto para organizar y estructurar el contenido en bloques -->
+        <p>
+            <!-- label: representa una etiqueta o texto explicativo para un elemento del formulario -->
+            <!-- for: vincula la etiqueta con el id del input que está controlando -->
+            <label for="nombre">Nombre:</label>
+            <!-- input: crea un campo interactivo para que el usuario introduzca datos -->
+            <!-- type: especifica el tipo de control o input que se va a mostrar -->
+            <!-- id: identificador único global para el elemento en toda la página -->
+            <!-- name: nombre del campo que se envía al servidor como clave del dato -->
+            <!-- placeholder: texto provisional que muestra una pista dentro del campo vacío -->
+            <!-- required: obliga al usuario a rellenar el campo antes de enviar -->
+            <!-- minlength: define el número mínimo de caracteres permitidos -->
+            <!-- maxlength: define el número máximo de caracteres permitidos -->
+            <!-- size: define el ancho visual del campo en cantidad de caracteres -->
+            <!-- pattern: expresión regular que el valor del campo debe cumplir de forma estricta -->
+            <!-- autofocus: hace que el campo reciba el foco automáticamente al cargar la página -->
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="2" maxlength="20" size="15" pattern="[A-Za-z]+" autofocus>
+        </p>
+
+        <p>
+            <label for="buscar">Buscar:</label>
+            <!-- search: campo de texto optimizado técnicamente para realizar búsquedas -->
+            <input type="search" id="buscar" name="buscar" placeholder="Buscar contenido...">
+        </p>
+
+        <p>
+            <label for="clave">Contraseña:</label>
+            <!-- password: campo de texto que oculta los caracteres introducidos por motivos de seguridad -->
+            <input type="password" id="clave" name="clave">
+        </p>
+
     </form>
 
 </body>
